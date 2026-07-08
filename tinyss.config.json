@@ -1,4 +1,5 @@
 {
 	"$schema": "./node_modules/create-tinyss/schema/tinyss.config.schema.json",
-	"outputDir": "output"
+	"outputDir": "output",
+	"template": "blog"
 }
