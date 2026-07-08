@@ -1,0 +1,11 @@
+{
+	"name": "mvhenten.github.io",
+	"private": true,
+	"type": "module",
+	"scripts": {
+		"build": "tinyss site/* site/posts/*"
+	},
+	"devDependencies": {
+		"create-tinyss": "^0.1.0"
+	}
+}
