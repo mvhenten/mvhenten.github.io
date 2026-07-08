@@ -6,6 +6,6 @@
 		"build": "tinyss site/* site/posts/*"
 	},
 	"devDependencies": {
-		"create-tinyss": "^0.1.0"
+		"create-tinyss": "^0.1.1"
 	}
 }

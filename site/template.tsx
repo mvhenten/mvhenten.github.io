@@ -1,5 +1,3 @@
-import { avatarDataUri } from "./avatar-data";
-
 interface Page {
 	source: string;
 	href: string;
@@ -115,7 +113,7 @@ export default function Template({
 					<aside class="sidebar">
 						<img
 							class="avatar"
-							src={avatarDataUri}
+							src="/avatar.png"
 							alt="Matthijs van Henten"
 							width="160"
 							height="160"
