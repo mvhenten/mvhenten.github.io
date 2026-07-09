@@ -3,11 +3,9 @@
 	"private": true,
 	"type": "module",
 	"scripts": {
-		"build": "tinyss site/* site/posts/*",
-		"postinstall": "patch-package"
+		"build": "tinyss site/* site/posts/*"
 	},
 	"devDependencies": {
-		"create-tinyss": "^0.1.2",
-		"patch-package": "^8.0.1"
+		"create-tinyss": "^0.1.3"
 	}
 }
