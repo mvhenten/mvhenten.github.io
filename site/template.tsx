@@ -64,6 +64,12 @@ export default function Template({
 				<meta name="viewport" content="width=device-width,initial-scale=1" />
 				<title>{isHome ? siteTitle : `${title} — ${siteTitle}`}</title>
 				<link rel="stylesheet" href="/style.css" />
+				<link
+					rel="alternate"
+					type="application/rss+xml"
+					title={siteTitle}
+					href="/feed.xml"
+				/>
 			</head>
 			<body>
 				<header class="masthead">
@@ -142,6 +148,9 @@ export default function Template({
 						<ul class="sidebar-list">
 							<li>
 								<a href="https://github.com/mvhenten">GitHub</a>
+							</li>
+							<li>
+								<a href="/feed.xml">RSS</a>
 							</li>
 						</ul>
 					</aside>
