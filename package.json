@@ -3,9 +3,9 @@
 	"private": true,
 	"type": "module",
 	"scripts": {
-		"build": "tinyss site/* site/posts/* && node scripts/index-titles.mjs"
+		"build": "tinyss site/* site/posts/*"
 	},
 	"devDependencies": {
-		"create-tinyss": "^0.1.3"
+		"create-tinyss": "^0.1.4"
 	}
 }
