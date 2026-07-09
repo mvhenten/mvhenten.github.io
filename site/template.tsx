@@ -113,7 +113,7 @@ export default function Template({
 					<aside class="sidebar">
 						<img
 							class="avatar"
-							src="/avatar.png"
+							src="/avatar.jpg"
 							alt="Matthijs van Henten"
 							width="160"
 							height="160"
