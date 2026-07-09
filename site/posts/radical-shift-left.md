@@ -34,3 +34,14 @@ LLMs can build complex ORM interfaces based off of your OpenAPI component models
 Over the past months, me, my team and my organization have proven that greenfield projects and retrofitting legacy systems can be done fast, frictionless and without creating slop by this radical shift left. I've released several open source libraries that we leverage day to day in our projects to generate code and build REST APIs at an industrial scale. At this point, the patterns and the recipes have become so solidified that standing up a new service is a matter of days and sometimes hours, including end-to-end test coverage, integration testing and demoable business use cases.
 
 So I hope this rant will inspire you to dig deeper into shifting left - engineering wise :)
+
+## References
+
+Some of the TypeSpec emitters and generators mentioned above ([kattebak](https://github.com/kattebak) is my playground org):
+
+- [typespec-electrodb-emitter](https://github.com/mvhenten/typespec-electrodb-emitter) - emit ElectroDB entities from your TypeSpec
+- [typespec-zod-emitter](https://github.com/mvhenten/typespec-zod-emitter) - generate Zod validators for TypeSpec models
+- [typespec-drizzle-orm-generator](https://github.com/kattebak/typespec-drizzle-orm-generator) - a TypeSpec generator for Drizzle ORM
+- [typespec-opensearch-emitter](https://github.com/kattebak/typespec-opensearch-emitter) - TypeSpec emitter for OpenSearch projections
+- [graphql-sdk-emitter](https://github.com/kattebak/graphql-sdk-emitter) - a typed GraphQL SDK from a TypeSpec source
+- [typespec-enum-emitter](https://github.com/kattebak/typespec-enum-emitter) - emit enums as JavaScript objects
