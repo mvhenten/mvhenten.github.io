@@ -4,5 +4,5 @@
 	"siteUrl": "https://mvhenten.github.io",
 	"title": "Matthijs van Henten",
 	"description": "Notes on software engineering and building with AI agents.",
-	"plugins": ["excerpts", "rss"]
+	"plugins": ["excerpts", "rss", "search"]
 }

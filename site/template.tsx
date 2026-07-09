@@ -130,6 +130,17 @@ export default function Template({
 							my employer's. I promise that my blog posts are always
 							written by me, and never slop.
 						</p>
+						<div class="sidebar-search">
+							<input
+								type="search"
+								id="search-input"
+								class="search-input"
+								placeholder="Search…"
+								aria-label="Search posts"
+								autocomplete="off"
+							/>
+							<ul id="search-results" class="search-results" hidden />
+						</div>
 						<h2 class="sidebar-heading">pages</h2>
 						<ul class="sidebar-list">
 							<li>
@@ -155,7 +166,50 @@ export default function Template({
 						</ul>
 					</aside>
 				</div>
+				<script src="/search.js" />
+				<script dangerouslySetInnerHTML={{ __html: SEARCH_WIDGET_SCRIPT }} />
 			</body>
 		</html>
 	);
 }
+
+const SEARCH_WIDGET_SCRIPT = `(function () {
+	var input = document.getElementById("search-input");
+	var results = document.getElementById("search-results");
+	if (!input || !results) return;
+
+	var timer = null;
+
+	function permalink(href) {
+		return "/" + href.replace(/index\\.html$/, "");
+	}
+
+	function render(items) {
+		results.innerHTML = "";
+		if (!items.length) {
+			results.hidden = true;
+			return;
+		}
+		items.forEach(function (item) {
+			var li = document.createElement("li");
+			var a = document.createElement("a");
+			a.href = permalink(item.href);
+			a.textContent = item.title;
+			li.appendChild(a);
+			results.appendChild(li);
+		});
+		results.hidden = false;
+	}
+
+	input.addEventListener("input", function () {
+		var value = input.value.trim();
+		window.clearTimeout(timer);
+		if (!value) {
+			render([]);
+			return;
+		}
+		timer = window.setTimeout(function () {
+			window.tinyss.search(value).then(render);
+		}, 150);
+	});
+})();`;

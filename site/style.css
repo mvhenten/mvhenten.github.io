@@ -95,6 +95,59 @@ main {
 	font-size: 0.85rem;
 }
 
+.sidebar-search {
+	position: relative;
+	margin-bottom: 1.75rem;
+}
+
+.search-input {
+	width: 100%;
+	padding: 0.35rem 0.5rem;
+	font: inherit;
+	font-size: 0.85rem;
+	color: var(--text);
+	background: var(--bg);
+	border: 1px solid var(--rule);
+	border-radius: 0;
+}
+
+.search-input:focus {
+	outline: none;
+	border-color: var(--link);
+}
+
+.search-results {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	right: 0;
+	z-index: 10;
+	margin: 0.35rem 0 0;
+	padding: 0;
+	list-style: none;
+	background: var(--bg);
+	border: 1px solid var(--rule);
+}
+
+.search-results li {
+	border-top: 1px solid var(--rule-light);
+}
+
+.search-results li:first-child {
+	border-top: none;
+}
+
+.search-results a {
+	display: block;
+	padding: 0.35rem 0.5rem;
+	font-size: 0.85rem;
+	text-decoration: none;
+}
+
+.search-results a:hover {
+	background: var(--code-bg);
+}
+
 .sidebar-heading {
 	margin: 1.75rem 0 0.5rem;
 	font-size: 0.85rem;
