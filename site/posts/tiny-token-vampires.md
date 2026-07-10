@@ -7,6 +7,12 @@ Okay, so my Claude code setup is pretty simple. I run Claude in a TMUX and I run
 
 Our setup at this point has been working quite well and we have been delivering several greenfield projects with near perfect accuracy. How we do that at this point is a little bit besides the point, but what I want to really remark is that my way of working hasn't changed significantly for a couple of months now, but my token usage went up crazy around the same time that Fable got released.
 
+<!-- more -->
+
+![A castor bean tick (Ixodes ricinus) questing on a dry grass seed head](/posts/images/tick-questing-dry-grass.jpg)
+
+_Questing for its next host, same as any agent pinging the main session for no reason. ["Ixodes ricinus on dry grass"](https://commons.wikimedia.org/wiki/File:Ixodes_ricinus_on_dry_grass.jpg) by W.alter, [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0), via Wikimedia Commons._
+
 Obviously, my first thought was, oh gosh, Fable sure is token hungry. And after hitting my limits a few times, I started to become more careful. I optimized my workflow using Fable for routing, brainstorming and supervising the project. Sonnet to create pull requests and Opus to do reviews after merging. I've created small skills that use Haiku for dumb work to avoid spending tokens on Opus for running things like logging into Jira or GitHub. So at this point, I was expecting my token usage to go down as I've actually invested and optimized my workflow to reduce the usage, the consumption.
 
 So Monday afternoon I started a new build of two projects, straightforward, cookie cutter, done it before, seen it before, end to end, including testing infrastructure and validation steps. Since the two projects did not overlap in the codebase, I could run them in parallel while dedicating the rest of my brain to research and writing. As usual, I let them run at night when the deployment lanes were clear and I can let them run without interfering with my team's work.
