@@ -3,7 +3,7 @@
 	"private": true,
 	"type": "module",
 	"scripts": {
-		"build": "tinyss site/* site/posts/*"
+		"build": "tinyss site/* site/posts/* site/posts/images/*"
 	},
 	"devDependencies": {
 		"create-tinyss": "^0.1.4"
