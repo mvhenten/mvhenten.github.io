@@ -15,7 +15,7 @@ By Tuesday around noon I had exhausted all of my limits. Not only had I exhauste
 
 At this point I think I was suffering from a little bit of a belief crisis. What had Anthropic done? Why am I losing my tokens like this? How can I get back to becoming efficient and productive again? And what else can I do to optimize my token use? I spend a lot of time reading and researching just to conclude I was already best boy in class: A minimalist, hand curated claude.md, small concise useful skills that automate repetitive work, agents with smaller models for the appropriate job, clear project plans and complete, unambiguous prompting.
 
-After buying tokens, getting back to work, and avoiding Fable like the plague (even using sonnet as the main driver) something struck me as I came back from a break, reading claude having a little chat with himself:
+After buying tokens, getting back to work, and avoiding Fable like the plague (even using sonnet as the main driver) something struck me as I came back from a break, reading claude having a little chat with itself:
 
 ```
 ● Agent "Fix issue #185 session routing" finished · 1h 40m 7s
