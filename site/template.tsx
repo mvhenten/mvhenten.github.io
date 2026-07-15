@@ -37,6 +37,12 @@ const formatDate = (value: unknown): string | undefined => {
 	});
 };
 
+const taglinesOf = (config: Record<string, unknown>): string[] => {
+	const value = config.taglines;
+	if (!Array.isArray(value)) return [];
+	return value.filter((t): t is string => typeof t === "string" && t.length > 0);
+};
+
 const excerptOf = (page: Page): string | undefined => {
 	const excerpt = page.extensions.excerpt;
 	return typeof excerpt === "string" && excerpt.length > 0
@@ -51,7 +57,7 @@ export default function Template({
 	pages,
 }: TemplateProps) {
 	const siteTitle = String(config.title ?? "");
-	const tagline = String(config.tagline ?? "");
+	const taglines = taglinesOf(config);
 	const current = pages.find((p) => p.title === title);
 	const isHome = current?.href === "index.html";
 	const date = formatDate(current?.extensions.date);
@@ -80,8 +86,19 @@ export default function Template({
 							<a href="/">{siteTitle}</a>
 						</p>
 					)}
-					{tagline ? <p class="tagline">{tagline}</p> : null}
+					{taglines.length > 0 ? (
+						<p class="tagline" id="tagline">
+							{taglines[0]}
+						</p>
+					) : null}
 				</header>
+				{taglines.length > 1 ? (
+					<script
+						dangerouslySetInnerHTML={{
+							__html: taglineScript(taglines),
+						}}
+					/>
+				) : null}
 				<div class="layout">
 					<main>
 						{isHome ? (
@@ -172,6 +189,15 @@ export default function Template({
 		</html>
 	);
 }
+
+const taglineScript = (taglines: string[]): string => {
+	const data = JSON.stringify(taglines).replace(/</g, "\\u003c");
+	return `(function () {
+	var taglines = ${data};
+	var el = document.getElementById("tagline");
+	if (el) el.textContent = taglines[Math.floor(Math.random() * taglines.length)];
+})();`;
+};
 
 const SEARCH_WIDGET_SCRIPT = `(function () {
 	var input = document.getElementById("search-input");
