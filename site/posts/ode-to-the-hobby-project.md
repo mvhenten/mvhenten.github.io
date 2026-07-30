@@ -25,12 +25,12 @@ We need to tinker, more than ever, to evolve the field of software engineering.
 
 ---
 
-The one that stuck is [ellipsize](https://github.com/mvhenten/ellipsize): under a hundred lines, written in 2014, truncates a string at the nearest whitespace. It does about 710,000 downloads a month. Nobody could care about that itch either.
+_My graveyard of hobby projects is extensive - and not all reflecting my current day skill set or way of thinking but they're still out there. Funny enough the one that stuck is [ellipsize](https://github.com/mvhenten/ellipsize): under a hundred lines, written in 2014, still about 710,000 downloads a month. I guess that was just good name squatting._
 
 The rest of the trail, oldest first — [89 public repos](https://github.com/mvhenten?tab=repositories&sort=oldest) since January 2011:
 
 - [pylatscan](https://github.com/mvhenten/pylatscan) (2011) - a laser triangulation 3D scanner in Python
 - [munge](https://github.com/mvhenten/munge) (2013) - an RSS feed reader written in Perl
-- [string-entropy](https://github.com/mvhenten/string-entropy) (2014) - estimate password strength
-- [drawio-headless](https://github.com/mvhenten/drawio-headless) (2026) - render drawio diagrams in Rust, no browser, no Electron
-- [mobux](https://github.com/mvhenten/mobux) (2026) - a touch-friendly tmux web UI
+- [string-entropy](https://github.com/mvhenten/string-entropy) (2014) - estimate password strength (my first deep dive into information theory)
+- [drawio-headless](https://github.com/mvhenten/drawio-headless) (2026) - render drawio diagrams in Rust, no browser, no Electron. Pure frustration.
+- [mobux](https://github.com/mvhenten/mobux) (2026) - a touch-friendly tmux web UI - My first project built exclusively on a phone during dog walks.
