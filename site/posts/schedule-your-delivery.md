@@ -1,5 +1,5 @@
 ---
-title: High Agency Is a Learnable Habit
+title: Schedule your delivery
 date: "2026-10-27"
 ---
 
