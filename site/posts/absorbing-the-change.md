@@ -11,7 +11,7 @@ Now that we can automate any process, getting stakeholders involved in shaping t
 
 Today we have to negotiate with our customer or the business when they are able to provide us with feedback or absorb the new changes in the product we're about to deliver.
 
-Engineering teams struggle with a similar problem because the product managers as input aggregators for requirements no longer works when engineers can absorb those product requirements faster than the product manager can formulate them.
+Engineering teams struggle with a similar problem because the product manager as input aggregator for requirements no longer works when engineers can absorb those product requirements faster than the product manager can formulate them.
 
 Meanwhile, the role of product manager as a quality gate and a strategic release coordinator is under a lot of pressure because more features get deployed than anyone could test and track.
 
