@@ -1,5 +1,5 @@
 ---
-title: Schedule your delivery
+title: Absorbing the change
 date: "2026-10-27"
 ---
 
