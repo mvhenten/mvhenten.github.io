@@ -9,7 +9,7 @@ Now that we can automate any process, getting stakeholders involved in shaping t
 
 <!-- more -->
 
-Today we have to negotiate with our customer or the business when they are able to provide us with feedback and absorb the new changes in tooling.
+Today we have to negotiate with our customer or the business when they are able to provide us with feedback or absorb the new changes in the product we're about to deliver.
 
 Engineering teams struggle with a similar problem where the product manager as an input aggregator for an engineering team no longer works because engineers can absorb product requirements faster than the product manager can state them.
 
