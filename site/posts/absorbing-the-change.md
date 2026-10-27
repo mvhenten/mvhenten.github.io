@@ -13,7 +13,7 @@ Today we have to negotiate with our customer or the business when they are able 
 
 Engineering teams struggle with a similar problem because the product managers as input aggregators for requirements no longer works when engineers can absorb those product requirements faster than the product manager can formulate them.
 
-Meanwhile, the role of product manager as a quality gate and a strategic release coordinator is under a lot of pressure because more features get deployed than a product manager can test and track.
+Meanwhile, the role of product manager as a quality gate and a strategic release coordinator is under a lot of pressure because more features get deployed than anyone could test and track.
 
 It's not obvious to me where the solution lies. On one hand, we could simply say we need more product managers so that the ratio of engineer to product manager changes, but that just adds another coordination layer that the business didn't ask for.
 
