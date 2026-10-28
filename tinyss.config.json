@@ -1,8 +1,8 @@
 {
 	"$schema": "./node_modules/create-tinyss/schema/tinyss.config.schema.json",
 	"outputDir": "output",
-	"siteUrl": "https://mvhenten.github.io",
+	"siteUrl": "https://technischepartij.nl",
 	"title": "Matthijs van Henten",
 	"description": "Notes on software engineering and building with AI agents.",
-	"plugins": ["excerpts", "rss", "search"]
+	"plugins": ["excerpts", "rss", "search", "sitemap"]
 }

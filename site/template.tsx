@@ -50,6 +50,12 @@ const excerptOf = (page: Page): string | undefined => {
 		: undefined;
 };
 
+const summarize = (text: string): string => {
+	const flat = text.replace(/\s+/g, " ").trim();
+	if (flat.length <= 160) return flat;
+	return `${flat.slice(0, 157).replace(/\s+\S*$/, "")}…`;
+};
+
 export default function Template({
 	title,
 	body,
@@ -62,6 +68,11 @@ export default function Template({
 	const isHome = current?.href === "index.html";
 	const date = formatDate(current?.extensions.date);
 	const posts = postsOf(pages);
+	const siteUrl = String(config.siteUrl ?? "");
+	const canonical = current ? `${siteUrl}${permalink(current.href)}` : undefined;
+	const description = summarize(
+		(current && excerptOf(current)) ?? String(config.description ?? ""),
+	);
 
 	return (
 		<html lang="en">
@@ -69,6 +80,8 @@ export default function Template({
 				<meta charset="utf-8" />
 				<meta name="viewport" content="width=device-width,initial-scale=1" />
 				<title>{isHome ? siteTitle : `${title} — ${siteTitle}`}</title>
+				<meta name="description" content={description} />
+				{canonical && <link rel="canonical" href={canonical} />}
 				<link rel="stylesheet" href="/style.css" />
 				<link
 					rel="alternate"
